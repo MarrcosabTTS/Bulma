@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
-</head> 
+</head>
 <body>
 	<!-- Introducción, pros y contras: https://pieces.app/blog/understanding-bulma -->
 	<!-- Starting Bulma: https://bulma.io/documentation/start/overview/ -->
@@ -15,7 +15,8 @@
 		</div>
 	</nav>
 	
-	  
+
+
 	<section class="section">
 	<div class="container">
 		<h1 class="title">Hello, Bulma!</h1>
@@ -47,7 +48,7 @@
 
 	<section class="section">
 		<div class="container">
-			<div class="columns">
+			<div class="columns"> <!-- https://bulma.io/documentation/columns/basics/ -->
 				<div class="column">1</div>
 				<div class="column">2</div>
 				<div class="column">3</div>
@@ -56,11 +57,15 @@
 			</div>
 
 
-			<div>This is in Light Mode if the user hasn't set a preference, or if their preference<code>is set to light</code>.</div>
 
-			<div data-theme="dark">This is in Dark Mode</div>
+			
+			<div class="box">
+				This is in Light Mode if the user hasn't set a preference, or if their preference<code>is set to light</code>.
+			</div>
 
-			<div class="theme-dark">This is also in Dark Mode</div>
+			<div class="box" data-theme="dark">This is in Dark Mod (usando data-theme)</div>
+
+			<div class="box theme-dark">This is also in Dark Mode (usando class)</div>
 		</div>
 	</section>
 
