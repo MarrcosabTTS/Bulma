@@ -1,0 +1,4 @@
+1- Canva: https://www.canva.com/design/DAGj-Cml6GI/Blu_9WvxrjE248yrFII2Ng/edit
+2- Bulma Documentación: https://bulma.io/documentation/start/overview/
+3- Guía sencilla: https://pieces.app/blog/understanding-bulma
+4- Guía en Español: http://developinginspanish.com/2018/04/09/aprende-bulma-en-5-minutos/
