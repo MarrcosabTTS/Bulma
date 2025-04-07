@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bulma Skeleton Demo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Estilos adicionales para mejorar la visualización */
+    .section {
+      border-bottom: 1px solid #eee;
+      padding: 2rem 1.5rem;
+    }
+    .skeleton-demo {
+      margin-bottom: 2rem;
+    }
+    .skeleton-demo-title {
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+    .theme-dark {
+      display: none;
+    }
+    [data-theme="dark"] .theme-light {
+      display: none;
+    }
+    [data-theme="dark"] .theme-dark {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar is-primary">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">Bulma Skeleton Demo</a>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Bulma Skeleton Loaders</h1>
+      <p class="subtitle">Demonstrating all skeleton loader types in Bulma</p>
+      
+      <div class="skeleton-toggler button is-primary is-medium mb-6">
+        <button id="js-toggle-skeleton" class="button is-primary is-medium">
+          Toggle All Skeleton Animations
+          <span id="skeleton-status">(Inactive)</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skeleton Block -->
+  <section class="section skeleton-demo">
+    <div class="container">
+      <h2 class="title is-4 skeleton-demo-title">Skeleton Block</h2>
+      <div class="skeleton-block is-skeleton">
+        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+        ut fermentum massa justo sit amet risus. Donec sed odio dui.
+        Nullam quis risus eget urna mollis ornare vel eu leo.
+        Cum sociis natoque penatibus et magnis dis parturient montes,
+        nascetur ridiculus mus. Nullam id dolor id
+        nibh ultricies vehicula ut id elit.
+      </div>
+    </div>
+  </section>
+
+  <!-- Skeleton Lines -->
+  <section class="section skeleton-demo">
+    <div class="container">
+      <h2 class="title is-4 skeleton-demo-title">Skeleton Lines</h2>
+      <div class="skeleton-lines is-skeleton">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skeleton Buttons -->
+  <section class="section skeleton-demo">
+    <div class="container">
+      <h2 class="title is-4 skeleton-demo-title">Buttons</h2>
+      <div class="buttons">
+        <button class="button is-skeleton">Button</button>
+        <button class="button is-link is-skeleton">Link</button>
+        <button class="button is-primary is-skeleton">Primary</button>
+        <button class="button is-success is-skeleton">Success</button>
+        <button class="button is-info is-skeleton">Info</button>
+        <button class="button is-warning is-skeleton">Warning</button>
+        <button class="button is-danger is-skeleton">Danger</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skeleton Icon -->
+  <section class="section skeleton-demo">
+    <div class="container">
+      <h2 class="title is-4 skeleton-demo-title">Icon</h2>
+      <span class="icon is-skeleton">
+        <i class="fas fa-reply"></i>
+      </span>
+    </div>
+  </section>
+
+  <!-- Skeleton Image -->
+  <section class="section skeleton-demo">
+    <div class="container">
+      <h2 class="title is-4 skeleton-demo-title">Image</h2>
+      <figure class="image is-16x16 is-skeleton">
+        <img alt="Placeholder" src="https://placehold.co/16x16">
+      </figure>
+      <figure class="image is-32x32 is-skeleton">
+        <img alt="Placeholder" src="https://placehold.co/32x32">
+      </figure>
+      <figure class="image is-64x64 is-skeleton">
+        <img alt="Placeholder" src="https://placehold.co/64x64">
+      </figure>
+      <figure class="image is-128x128 is-skeleton">
+        <img alt="Placeholder" src="https://placehold.co/128x128">
+      </figure>
+    </div>
+  </section>
+
+  <!-- Skeleton Media Object -->
+  <section class="section skeleton-demo">
+    <div class="container">
+      <h2 class="title is-4 skeleton-demo-title">Media Object</h2>
+      <article class="media">
+        <figure class="media-left">
+          <p class="image is-64x64 is-skeleton">
+            <img src="https://placehold.co/128x128" alt="Placeholder image">
+          </p>
+        </figure>
+        <div class="media-content">
+          <div class="content is-skeleton">
+            <p>
+              <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+              <br>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <nav class="level is-mobile">
+            <div class="level-left">
+              <a class="level-item"><span class="icon is-small is-skeleton"><i class="fas fa-reply"></i></span></a>
+              <a class="level-item"><span class="icon is-small is-skeleton"><i class="fas fa-retweet"></i></span></a>
+              <a class="level-item"><span class="icon is-small is-skeleton"><i class="fas fa-heart"></i></span></a>
+            </div>
+          </nav>
+        </div>
+        <div class="media-right">
+          <button aria-label="delete" class="delete is-skeleton"></button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Skeleton Notification -->
+  <section class="section skeleton-demo">
+    <div class="container">
+      <h2 class="title is-4 skeleton-demo-title">Notification</h2>
+      <div class="notification is-skeleton">
+        Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod.
+      </div>
+    </div>
+  </section>
+
+  <!-- Skeleton Tag -->
+  <section class="section skeleton-demo">
+    <div class="container">
+      <h2 class="title is-4 skeleton-demo-title">Tag</h2>
+      <span class="tag is-skeleton">Tag</span>
+      <span class="tag is-link is-skeleton">Link</span>
+      <span class="tag is-primary is-skeleton">Primary</span>
+      <span class="tag is-info is-skeleton">Info</span>
+      <span class="tag is-success is-skeleton">Success</span>
+      <span class="tag is-warning is-skeleton">Warning</span>
+      <span class="tag is-danger is-skeleton">Danger</span>
+    </div>
+  </section>
+
+  <!-- Skeleton Title/Subtitle -->
+  <section class="section skeleton-demo">
+    <div class="container">
+      <h2 class="title is-4 skeleton-demo-title">Title & Subtitle</h2>
+      
+      <h3 class="title is-5">is-skeleton</h3>
+      <h1 class="title is-skeleton">Title</h1>
+      <h2 class="subtitle is-skeleton">Subtitle</h2>
+      
+      <h3 class="title is-5">has-skeleton</h3>
+      <h1 class="title has-skeleton">Title</h1>
+      <h2 class="subtitle has-skeleton">Subtitle</h2>
+    </div>
+  </section>
+
+  <!-- Skeleton Form Controls -->
+  <section class="section skeleton-demo">
+    <div class="container">
+      <h2 class="title is-4 skeleton-demo-title">Form Controls</h2>
+      <div class="field">
+        <label class="label is-skeleton">Name</label>
+        <div class="control">
+          <input class="input is-skeleton" placeholder="Text input">
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label is-skeleton">Message</label>
+        <div class="control">
+          <textarea class="textarea is-skeleton" placeholder="Textarea"></textarea>
+        </div>
+      </div>
+      
+      <div class="field">
+        <div class="control">
+          <label class="checkbox is-skeleton">
+            <input type="checkbox"> Remember me
+          </label>
+        </div>
+      </div>
+      
+      <div class="field">
+        <div class="control">
+          <label class="radio is-skeleton">
+            <input type="radio" name="question"> Yes
+          </label>
+          <label class="radio is-skeleton">
+            <input type="radio" name="question"> No
+          </label>
+        </div>
+      </div>
+      
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-primary is-skeleton">Submit</button>
+        </div>
+        <div class="control">
+          <button class="button is-link is-skeleton">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggleButton = document.getElementById('js-toggle-skeleton');
+      const statusLabel = document.getElementById('skeleton-status');
+      
+      let skeletonsActive = false;
+      
+      function toggleSkeletons() {
+        // Seleccionar todos los elementos con clases is-skeleton o has-skeleton
+        const skeletonElements = document.querySelectorAll('.is-skeleton, .has-skeleton, .skeleton-block, .skeleton-lines');
+        
+        skeletonElements.forEach((el) => {
+          if (el.classList.contains('is-skeleton') || el.classList.contains('has-skeleton')) {
+            // Alternar la clase skeleton para elementos estándar
+            el.classList.toggle('is-skeleton');
+            el.classList.toggle('has-skeleton');
+          } else if (el.classList.contains('skeleton-block') || el.classList.contains('skeleton-lines')) {
+            // Para los elementos especiales de bloque y líneas
+            el.classList.toggle('is-skeleton');
+          }
+        });
+      }
+      
+      toggleButton.addEventListener('click', () => {
+        skeletonsActive = !skeletonsActive;
+        
+        statusLabel.textContent = skeletonsActive ? '(Active)' : '(Inactive)';
+        toggleSkeletons();
+      });
+      
+      // Inicializar el estado
+      toggleSkeletons(); // Desactivar todos al inicio
+      toggleSkeletons(); // Reactivar para que estén visibles inicialmente
+    });
+  </script>
+</body>
+</html>

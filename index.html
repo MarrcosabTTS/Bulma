@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html> 
+<html> 
+  <head> 
+    <title>BULMA</title> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+</head> 
+<body>
+	<!-- Introducción, pros y contras: https://pieces.app/blog/understanding-bulma -->
+	<!-- Starting Bulma: https://bulma.io/documentation/start/overview/ -->
+	<nav class="navbar is-primary">
+		<div class="navbar-brand">
+			<a class="navbar-item" href="#">MyBulmaSite</a>
+		</div>
+	</nav>
+	
+	  
+	<section class="section">
+	<div class="container">
+		<h1 class="title">Hello, Bulma!</h1>
+		<p class="subtitle">This is a simple example demonstrating how to use Bulma in a project.</p>
+	</div>
+	</section>
+
+	<button class="button is-primary">Button</button>
+	<button class="button is-link">Button</button>
+	<button class="button is-info">Button</button>
+	<button class="button is-success">Button</button>
+	<button class="button is-warning">Button</button>
+	<button class="button is-danger">Button</button>
+
+	<button class="button is-small">Button</button>
+	<button class="button">Button</button>
+	<button class="button is-medium">Button</button>
+	<button class="button is-large">Button</button>
+
+	<button class="button is-primary is-outlined">Button</button>
+	<button class="button is-loading">Button</button>
+	<button class="button" disabled>Button</button>
+
+	</br>
+	<button class="button is-primary is-small" disabled>Button</button>
+	<button class="button is-info is-loading">Button</button>
+	<button class="button is-danger is-outlined is-large">Button</button>
+	</br></br>
+
+	<section class="section">
+		<div class="container">
+			<div class="columns">
+				<div class="column">1</div>
+				<div class="column">2</div>
+				<div class="column">3</div>
+				<div class="column">4</div>
+				<div class="column">5</div>
+			</div>
+
+
+			<div>This is in Light Mode if the user hasn't set a preference, or if their preference<code>is set to light</code>.</div>
+
+			<div data-theme="dark">This is in Dark Mode</div>
+
+			<div class="theme-dark">This is also in Dark Mode</div>
+		</div>
+	</section>
+
+
+
+
+	<section class="section">
+		<div class="container">
+			<div class="skeleton-toggler button is-primary is-medium mb-6">
+				<button id="js-toggle-skeleton">
+					Toggle Skeleton Animations
+					<span id="skeleton-status">(Inactive)</span>
+				</button>
+			</div>
+			<!-- Tus botones específicos -->
+			<div class="buttons" id="skeleton-buttons">
+				<button class="button is-skeleton">Button</button>
+				<button class="button is-link is-skeleton">Link</button>
+				<button class="button is-primary is-skeleton">Primary</button>
+				<button class="button is-success is-skeleton">Success</button>
+				<button class="button is-info is-skeleton">Info</button>
+				<button class="button is-warning is-skeleton">Warning</button>
+				<button class="button is-danger is-skeleton">Danger</button>
+			</div>
+			<div class="skeleton-block">
+				Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+				Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+				ut fermentum massa justo sit amet risus. Donec sed odio dui.
+				Nullam quis risus eget urna mollis ornare vel eu leo.
+				Cum sociis natoque penatibus et magnis dis parturient montes,
+				nascetur ridiculus mus. Nullam id dolor id
+				nibh ultricies vehicula ut id elit.
+			</div>
+		</div>
+	</section>
+		
+
+	  
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', () => {
+			const hasSkeletons = document.querySelectorAll('.has-skeleton');
+			const isSkeletons = document.querySelectorAll('.is-skeleton');
+			const toggleButton = document.getElementById('js-toggle-skeleton');
+			const statusLabel = document.getElementById('skeleton-status');
+		
+			let skeletonsActive = false;
+		
+			function toggleSkeletons() {
+				hasSkeletons.forEach((el) => {
+					el.classList.toggle("has-skeleton");
+				});
+			
+				isSkeletons.forEach((el) => {
+					el.classList.toggle("is-skeleton");
+				});
+			}
+		
+			toggleButton.addEventListener("click", () => {
+				skeletonsActive = !skeletonsActive;
+			
+				statusLabel.textContent = skeletonsActive ? "(Active)" : "(Inactive)";
+				toggleSkeletons();
+			});
+		});
+	</script>
+</body>
+</html>
