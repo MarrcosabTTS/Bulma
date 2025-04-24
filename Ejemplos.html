@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJEMPLOS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  Ejemplos básicos
+  1. Estructura básica html
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>BULMA</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Hello, Bulma!</h1>
+        <p class="subtitle">This is a simple example</p>
+      </div>
+    </section>
+  </body>
+  </html>
+
+  2. Botones
+  html
+  <button class="button is-primary">Primary</button>
+  <button class="button is-link">Link</button>
+  <button class="button is-info">Info</button>
+  <button class="button is-success">Success</button>
+  <button class="button is-warning">Warning</button>
+  <button class="button is-danger">Danger</button>
+  
+  <!-- Tamaños -->
+  <button class="button is-small">Small</button>
+  <button class="button">Normal</button>
+  <button class="button is-medium">Medium</button>
+  <button class="button is-large">Large</button>
+  
+  <!-- Variantes -->
+  <button class="button is-primary is-outlined">Outlined</button>
+  <button class="button is-loading">Loading</button>
+  <button class="button" disabled>Disabled</button>
+  3. Columnas
+  html
+  <div class="columns">
+    <div class="column">1</div>
+    <div class="column">2</div>
+    <div class="column">3</div>
+    <div class="column">4</div>
+  </div>
+  Ejemplos avanzados
+  1. Navbar
+  html
+  <nav class="navbar is-primary">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">MyBulmaSite</a>
+    </div>
+  </nav>
+  2. Bloques y cajas
+  html
+  <div class="block has-background-primary has-text-white p-4">
+    This is a block with primary background
+  </div>
+  
+  <div class="box">
+    <article class="media">
+      <div class="media-left">
+        <figure class="image is-64x64">
+          <img src="placeholder.png" alt="Image">
+        </figure>
+      </div>
+      <div class="media-content">
+        <div class="content">
+          <p><strong>John Smith</strong> <small>@johnsmith</small></p>
+          <p>Lorem ipsum dolor sit amet...</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  3. Formularios
+  html
+  <form class="box">
+    <div class="field">
+      <label class="label">Email</label>
+      <div class="control">
+        <input class="input" type="email" placeholder="e.g. alex@example.com">
+      </div>
+    </div>
+    
+    <div class="field">
+      <label class="label">Password</label>
+      <div class="control">
+        <input class="input" type="password" placeholder="********">
+      </div>
+    </div>
+    
+    <button class="button is-primary">Sign in</button>
+  </form>
+  4. Barras de progreso
+  html
+  <progress class="progress is-link" value="15" max="100">15%</progress>
+  <progress class="progress is-primary" value="30" max="100">30%</progress>
+  <progress class="progress is-success" value="60" max="100">60%</progress>
+  
+  <!-- Indeterminado -->
+  <progress class="progress is-small is-primary" max="100"></progress>
+  <progress class="progress is-danger" max="100"></progress>
+  5. Tablas
+  html
+  <table class="table is-striped">
+    <tbody>
+      <tr class="is-primary">
+        <th>Primary row</th>
+        <td>Two</td>
+        <td>Three</td>
+      </tr>
+      <tr>
+        <th class="is-success">Success th cell</th>
+        <td>Two</td>
+        <td class="is-success">Success td cell</td>
+      </tr>
+    </tbody>
+  </table>
+  6. Componentes con funcionalidad JavaScript
+  html
+  <!-- Notificación con botón para cerrar -->
+  <div class="notification is-danger">
+    <button class="delete"></button>
+    Lorem ipsum dolor sit amet...
+  </div>
+  
+  <script>
+    document.querySelectorAll('.delete').forEach(button => {
+      button.addEventListener('click', function() {
+        this.parentNode.style.display = 'none';
+      });
+    });
+  </script>
+  7. Esqueletos (Skeleton)
+  html
+  <div class="buttons" id="skeleton-buttons">
+    <button class="button is-skeleton">Button</button>
+    <button class="button is-primary is-skeleton">Primary</button>
+  </div>
+</body>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggleButton = document.getElementById('js-toggle-skeleton');
+      toggleButton.addEventListener("click", () => {
+        document.querySelectorAll('.is-skeleton').forEach(el => {
+          el.classList.toggle("is-skeleton");
+        });
+      });
+    });
+  </script>
+  
+
+<!--Codigo para cerrar los mensajes de delete-->
+  <script>
+    // Seleccionamos todos los botones de eliminar
+    const deleteButtons = document.querySelectorAll('.delete');
+
+    // Añadimos un evento de clic a cada botón
+    deleteButtons.forEach(button => {
+      button.addEventListener('click', function () {
+        // Cerramos (eliminamos) el contenedor del mensaje
+        const parent = button.closest('.notification, .message, .tag');
+        if (parent) {
+          parent.style.display = 'none';  // Ocultamos el mensaje
+        }
+      });
+    });
+  </script>
+
+</html>
