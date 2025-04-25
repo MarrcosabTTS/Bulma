@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EJEMPLOS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+
+  <p class="title is-1">Ejemplos básicos</p>
+
+  <div class="content">
+
+
+    <p class="title is-3">1. Estructura básica html
+
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Hello, Bulma!</h1>
+        <p class="subtitle">This is a simple example</p>
+      </div>
+    </section>
+
+
+    <p class="title is-3">2. Block</p>
+
+
+    <!-- Primer bloque con color de fondo primario -->
+    <div class="block has-background-primary has-text-white p-4">
+      This text is within a <strong>block</strong>.
+    </div>
+    <!-- Segundo bloque con color de fondo de advertencia -->
+    <div class="block has-background-warning has-text-dark p-4">
+      This text is within a <strong>second block</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+    </div>
+    <!-- Tercer bloque con color de fondo de información -->
+    <div class="block has-background-info has-text-white p-4">
+      This text is within a <strong>third block</strong>. This block has no margin at the bottom.
+    </div>
+
+    <p class="title is-3">3. Box</p>
+
+
+    <div class="box">
+      <!--La clase media se usa para crear una estructura que alinea un contenido de forma horizontal, como una imagen o un bloque-->
+      <article class="media">
+        <div class="media-left">
+          <!--Es un contenedor semántico para la imagen. La clase image es la que aplica un estilo básico de imagen-->
+          <figure class="image is-64x64">
+            <img src="https://bulma.io/assets/images/placeholders/128x128.png" alt="Image" />
+          </figure>
+        </div>
+        <div class="media-content">
+          <div class="content">
+            <p>
+              <strong>John Smith</strong> <small>@johnsmith</small>
+              <small>31m</small>
+              <br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              efficitur sit amet massa fringilla egestas. Nullam condimentum luctus
+              turpis.
+            </p>
+          </div>
+          <!--La clase level organiza los elementos dentro del contenedor. Haciendo que la barra de navegación esten alineados horizontalmente-->
+          <!--is-mobile Hace que la barra de navegacion sea responsive-->
+          <nav class="level is-mobile">
+            <div class="level-left">
+              <a class="level-item" aria-label="reply">
+                <span class="icon is-small">
+                  <i class="fas fa-reply" aria-hidden="true"></i>
+                </span>
+              </a>
+              <a class="level-item" aria-label="retweet">
+                <span class="icon is-small">
+                  <i class="fas fa-retweet" aria-hidden="true"></i>
+                </span>
+              </a>
+              <a class="level-item" aria-label="like">
+                <span class="icon is-small">
+                  <i class="fas fa-heart" aria-hidden="true"></i>
+                </span>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </article>
+    </div>
+
+
+    <p class="title is-3">4. Button</p>
+
+
+    <button class="button is-primary">Primary</button>
+    <button class="button is-link">Link</button>
+    <button class="button is-info">Info</button>
+    <button class="button is-success">Success</button>
+    <button class="button is-warning">Warning</button>
+    <button class="button is-danger">Danger</button>
+
+    <!-- Tamaños -->
+    <button class="button is-small">Small</button>
+    <button class="button">Normal</button>
+    <button class="button is-medium">Medium</button>
+    <button class="button is-large">Large</button>
+
+    <!-- Variantes -->
+    <button class="button is-primary is-outlined">Outlined</button>
+    <button class="button is-loading">Loading</button>
+    <button class="button" disabled>Disabled</button>
+
+    <p class="title is-3">5. Delete</p>
+
+    <div class="block">
+      <span class="tag is-success">
+        Hello World
+        <button class="delete is-small"></button>
+      </span>
+    </div>
+
+    <div class="notification is-danger">
+      <button class="delete"></button>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit
+      amet, consectetur adipiscing elit
+    </div>
+
+    <article class="message is-info">
+      <div class="message-header">
+        Info
+        <button class="delete"></button>
+      </div>
+      <div class="message-body">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus
+        mi, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit
+        amet fringilla. Nullam gravida purus diam, et dictum felis venenatis
+        efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu
+        et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna
+        a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+      </div>
+    </article>
+
+    <p class="title is-3">6. Progress bars</p>
+
+
+    <progress class="progress is-link" value="15" max="100">15%</progress>
+    <progress class="progress is-primary" value="30" max="100">30%</progress>
+    <progress class="progress is-success" value="60" max="100">60%</progress>
+
+    <!-- Indeterminado -->
+    <progress class="progress is-small is-primary" max="100"></progress>
+    <progress class="progress is-danger" max="100"></progress>
+
+    <p class="title is-3">7. Tablas</p>
+
+
+      <table class="table is-bordered">
+        <tbody>
+          <tr class="is-primary">
+            <th>Primary row</th>
+            <td>Two</td>
+            <td>Three</td>
+          </tr>
+          <tr>
+            <th class="is-success">Success th cell</th>
+            <td>Two</td>
+            <td class="is-success">Success td cell</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <p class="title is-3">Tables con Striped</p>
+      <table class="table is-striped">
+        <tbody>
+          <tr>
+            <th>Primary row</th>
+            <td>Two</td>
+            <td>Three</td>
+          </tr>
+          <tr>
+            <th>Success th cell</th>
+            <td>Two</td>
+            <td>Success td cell</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="title is-3">Tables con varios modificadores</p>
+      <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+        <tbody>
+          <tr>
+            <th>Primary row</th>
+            <td>Two</td>
+            <td>Three</td>
+          </tr>
+          <tr>
+            <th>Success th cell</th>
+            <td>Two</td>
+            <td>Success td cell</td>
+          </tr>
+        </tbody>
+      </table>
+
+  </div>
+</body>
+
+
+
+<!--Codigo para cerrar los mensajes de delete-->
+<script>
+  // Seleccionamos todos los botones de eliminar
+  const deleteButtons = document.querySelectorAll('.delete');
+
+  // Añadimos un evento de clic a cada botón
+  deleteButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      // Cerramos (eliminamos) el contenedor del mensaje
+      const parent = button.closest('.notification, .message, .tag');
+      if (parent) {
+        parent.style.display = 'none';  // Ocultamos el mensaje
+      }
+    });
+  });
+</script>
+
+</html>
