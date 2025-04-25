@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplos con Vista y Código</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    pre {
+      background: #f4f4f4;
+      padding: 1em;
+      overflow-x: auto;
+    }
+    code {
+      white-space: pre;
+    }
+  </style>
+</head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <h1 class="title has-text-centered">Ejemplos con Bulma + Código</h1>
+
+    <!-- 1. HTML Básico -->
+    <div class="box">
+      <div class="columns">
+        <div class="column is-half">
+          <h2 class="title is-4">1. Estructura básica HTML</h2>
+          <section class="section">
+            <div class="container">
+              <h1 class="title">Hello, Bulma!</h1>
+              <p class="subtitle">This is a simple example</p>
+            </div>
+          </section>
+        </div>
+        <div class="column is-half">
+<pre><code>&lt;section class="section"&gt;
+  &lt;div class="container"&gt;
+    &lt;h1 class="title"&gt;Hello, Bulma!&lt;/h1&gt;
+    &lt;p class="subtitle"&gt;This is a simple example&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Blocks -->
+    <div class="box">
+      <div class="columns">
+        <div class="column is-half">
+          <h2 class="title is-4">2. Block</h2>
+          <div class="block has-background-primary has-text-white p-4">
+            Bloque 1
+          </div>
+          <div class="block has-background-warning has-text-dark p-4">
+            Bloque 2
+          </div>
+          <div class="block has-background-info has-text-white p-4">
+            Bloque 3
+          </div>
+        </div>
+        <div class="column is-half">
+<pre><code>&lt;div class="block has-background-primary has-text-white"&gt;
+  Bloque 1
+&lt;/div&gt;
+&lt;div class="block has-background-warning has-text-dark"&gt;
+  Bloque 2
+&lt;/div&gt;
+&lt;div class="block has-background-info has-text-white"&gt;
+  Bloque 3
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Box -->
+    <div class="box">
+      <div class="columns">
+        <div class="column is-half">
+          <h2 class="title is-4">3. Box (Media)</h2>
+          <div class="box">
+            <article class="media">
+              <div class="media-left">
+                <figure class="image is-64x64">
+                  <img src="https://bulma.io/assets/images/placeholders/128x128.png" />
+                </figure>
+              </div>
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong>John Smith</strong> <small>@johnsmith</small> <br>
+                    Lorem ipsum dolor sit amet...
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="column is-half">
+<pre><code>&lt;div class="box"&gt;
+  &lt;article class="media"&gt;
+    &lt;div class="media-left"&gt;
+      &lt;figure class="image is-64x64"&gt;
+        &lt;img src="..." /&gt;
+      &lt;/figure&gt;
+    &lt;/div&gt;
+    &lt;div class="media-content"&gt;
+      &lt;p&gt;&lt;strong&gt;John Smith&lt;/strong&gt;...&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/article&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Botones -->
+    <div class="box">
+      <div class="columns">
+        <div class="column is-half">
+          <h2 class="title is-4">4. Botones</h2>
+          <div class="buttons">
+            <button class="button is-primary">Primary</button>
+            <button class="button is-link">Link</button>
+            <button class="button is-info">Info</button>
+            <button class="button is-success">Success</button>
+            <button class="button is-warning">Warning</button>
+            <button class="button is-danger">Danger</button>
+          </div>
+        </div>
+        <div class="column is-half">
+<pre><code>&lt;button class="button is-primary"&gt;Primary&lt;/button&gt;
+&lt;button class="button is-link"&gt;Link&lt;/button&gt;
+&lt;button class="button is-info"&gt;Info&lt;/button&gt;
+...</code></pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. Delete -->
+    <div class="box">
+      <div class="columns">
+        <div class="column is-half">
+          <h2 class="title is-4">5. Delete</h2>
+          <div class="notification is-danger">
+            <button class="delete"></button>
+            Notificación eliminable
+          </div>
+        </div>
+        <div class="column is-half">
+<pre><code>&lt;div class="notification is-danger"&gt;
+  &lt;button class="delete"&gt;&lt;/button&gt;
+  Notificación eliminable
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. Progress -->
+    <div class="box">
+      <div class="columns">
+        <div class="column is-half">
+          <h2 class="title is-4">6. Barras de progreso</h2>
+          <progress class="progress is-link" value="15" max="100">15%</progress>
+          <progress class="progress is-success" value="60" max="100">60%</progress>
+        </div>
+        <div class="column is-half">
+<pre><code>&lt;progress class="progress is-link" value="15" max="100"&gt;15%&lt;/progress&gt;
+&lt;progress class="progress is-success" value="60" max="100"&gt;60%&lt;/progress&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. Tablas -->
+    <div class="box">
+      <div class="columns">
+        <div class="column is-half">
+          <h2 class="title is-4">7. Tabla</h2>
+          <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+            <thead>
+              <tr><th>Col 1</th><th>Col 2</th><th>Col 3</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Uno</td><td>Dos</td><td>Tres</td></tr>
+              <tr><td>Cuatro</td><td>Cinco</td><td>Seis</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="column is-half">
+<pre><code>&lt;table class="table is-bordered is-striped is-hoverable is-fullwidth"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;Col 1&lt;/th&gt;&lt;th&gt;Col 2&lt;/th&gt;&lt;th&gt;Col 3&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;Uno&lt;/td&gt;&lt;td&gt;Dos&lt;/td&gt;&lt;td&gt;Tres&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Script para cerrar los mensajes -->
+<script>
+  document.querySelectorAll('.delete').forEach(button => {
+    button.addEventListener('click', () => {
+      const parent = button.closest('.notification, .message, .tag');
+      if (parent) parent.style.display = 'none';
+    });
+  });
+</script>
+
+</body>
+</html>
