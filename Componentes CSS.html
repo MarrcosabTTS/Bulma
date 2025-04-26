@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPONENTES CSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<style>
+    html{
+      background: linear-gradient(
+        to right,
+        hsl(271, 100%, 85%) 0%,
+        hsl(171, 100%, 41%) 100%
+      );
+    }
+  .is-1 {
+    margin: 50px;
+    margin-top: 50px;
+  }
+  .custom-card {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .custom-card .image.is-4by3 {
+    padding-top: 75%;
+  }
+  .custom-card .media-left .image.is-48x48 {
+    width: 32px;
+    height: 32px;
+  }
+  .custom-card .title.is-4 {
+    font-size: 1.1rem;
+  }
+  .custom-card .subtitle.is-6 {
+    font-size: 0.8rem;
+  }
+  .custom-card .content {
+    font-size: 0.9rem;
+  }
+</style>
+
+<body>
+
+  <p class="title is-1 has-text-centered">COMPONENTES CSS</p>
+
+  <section class="section">
+    <div class="container">
+      <div class="box">
+        <p class="title is-3">1. Breadcrumb</p>
+
+          <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
+            <ul>
+              <li><a href="#">Bulma</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Components</a></li>
+              <li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li>
+            </ul>
+          </nav>
+
+          <pre style="max-width: 800px; margin: 0 auto; background: #f5f5f5; padding: 1rem; border-radius: 20px;"><code>
+            &lt;nav class="breadcrumb is-centered" aria-label="breadcrumbs"&gt;
+              &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Bulma&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Documentation&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Components&lt;/a&gt;&lt;/li&gt;
+                &lt;li class="is-active"&gt;&lt;a href="#" aria-current="page"&gt;Breadcrumb&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/nav&gt;
+          </code></pre>
+      </div>
+    </div>
+  </section> 
+
+  <section class="section">
+    <div class="container">
+      <div class="box">
+        <p class="title is-3">2. Card</p>
+
+        <div class="columns">
+          <div class="column is-two-fifths" style="margin-top: 90px;">
+            <div class="card custom-card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/assets/images/placeholders/1280x960.png"/>
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="https://bulma.io/assets/images/placeholders/96x96.png"/>
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">John Smith</p>
+                    <p class="subtitle is-6">@johnsmith</p>
+                  </div>
+                </div>
+            
+                <div class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+                  iaculis mauris. <a>@bulmaio</a>. <a href="#">#css</a>
+                  <a href="#">#responsive</a>
+                  <br />
+                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+        <div class="column is-three-fifths">
+          <pre style="max-width: 900px; margin: 0 auto; background: #f5f5f5; padding: 50px; border-radius: 20px;"><code>&lt;div class="card custom-card"&gt;
+        &lt;div class="card-image"&gt;
+          &lt;figure class="image is-4by3"&gt;
+            &lt;img src="https://bulma.io/assets/images/placeholders/1280x960.png"/&gt;
+          &lt;/figure&gt;
+        &lt;/div&gt;
+        &lt;div class="card-content"&gt;
+          &lt;div class="media"&gt;
+            &lt;div class="media-left"&gt;
+              &lt;figure class="image is-48x48"&gt;
+                &lt;img src="https://bulma.io/assets/images/placeholders/96x96.png"/&gt;
+              &lt;/figure&gt;
+            &lt;/div&gt;
+            &lt;div class="media-content"&gt;
+              &lt;p class="title is-4"&gt;John Smith&lt;/p&gt;
+              &lt;p class="subtitle is-6"&gt;@johnsmith&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+      
+          &lt;div class="content"&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Phasellus nec iaculis mauris. &lt;a&gt;@bulmaio&lt;/a&gt;.
+            &lt;a href="#"&gt;#css&lt;/a&gt; &lt;a href="#"&gt;#responsive&lt;/a&gt;
+            &lt;br/&gt;
+            &lt;time datetime="2016-1-1"&gt;11:09 PM - 1 Jan 2016&lt;/time&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;</code></pre>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="box">
+      <p class="title is-3">3. Dropdown</p>
+
+      <div class="columns">
+        <div class="column is-three-fifhts">
+          <div class="dropdown" style="margin-right: 20px; margin-left: 50px;">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                <span>Dropdown button</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu" role="menu">
+              <div class="dropdown-content">
+                <a href="#" class="dropdown-item"> Dropdown item </a>
+                <a class="dropdown-item"> Other dropdown item </a>
+                <a href="#" class="dropdown-item"> Active dropdown item </a>
+                <a href="#" class="dropdown-item"> Other dropdown item </a>
+                <hr class="dropdown-divider" />
+                <a href="#" class="dropdown-item"> With a divider </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown" style="margin-right: 20px;">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu5">
+                <span>Left aligned</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu5" role="menu">
+              <div class="dropdown-content">
+                <div class="dropdown-item">
+                  <p>The dropdown is <strong>left-aligned</strong> by default.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown is-right" style="margin-right: 20px;">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu6">
+                <span>Right aligned</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu6" role="menu">
+              <div class="dropdown-content">
+                <div class="dropdown-item">
+                  <p>
+                    Add the <code>is-right</code> modifier for a
+                    <strong>right-aligned</strong> dropdown.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <pre style="max-width: 800px; margin: 0 auto; margin-top: 50px; background: #f5f5f5; padding: 50px; border-radius: 20px;"><code>&lt;div class="dropdown" style="margin: 20px;"&gt;
+  &lt;div class="dropdown-trigger"&gt;
+    &lt;button class="button" aria-haspopup="true" aria-controls="dropdown-menu"&gt;
+      &lt;span&gt;Dropdown button&lt;/span&gt;
+      &lt;span class="icon is-small"&gt;
+        &lt;i class="fas fa-angle-down" aria-hidden="true"&gt;&lt;/i&gt;
+      &lt;/span&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="dropdown-menu" id="dropdown-menu" role="menu"&gt;
+    &lt;div class="dropdown-content"&gt;
+      &lt;a href="#" class="dropdown-item"&gt; Dropdown item &lt;/a&gt;
+      &lt;a class="dropdown-item"&gt; Other dropdown item &lt;/a&gt;
+      &lt;a href="#" class="dropdown-item"&gt; Active dropdown item &lt;/a&gt;
+      &lt;a href="#" class="dropdown-item"&gt; Other dropdown item &lt;/a&gt;
+      &lt;hr class="dropdown-divider" /&gt;
+      &lt;a href="#" class="dropdown-item"&gt; With a divider &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+    </div>
+
+      <div class="column is-two-fifhts">
+        <pre style="max-width: 700px; margin: 0 auto; margin-top:100px; background: #282c34; padding: 50px; border-radius: 20px; color: #abb2bf;">
+<code>/* SCRIPT */
+&lt;script&gt;
+    document.querySelectorAll('.dropdown-trigger').forEach(trigger =&gt; {
+        trigger.addEventListener('click', function() {
+            const dropdown = this.closest('.dropdown');
+            dropdown.classList.toggle('is-active');
+        });
+    });
+  
+    document.addEventListener('click', function(event) {
+        if (!event.target.closest('.dropdown')) {
+            document.querySelectorAll('.dropdown').forEach(dropdown =&gt; {
+                dropdown.classList.remove('is-active');
+            });
+        }
+    });
+&lt;/script&gt;</code></pre>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <script>
+      document.querySelectorAll('.dropdown-trigger').forEach(trigger => {
+          trigger.addEventListener('click', function() {
+              const dropdown = this.closest('.dropdown');
+              dropdown.classList.toggle('is-active');
+          });
+      });
+
+      document.addEventListener('click', function(event) {
+          if (!event.target.closest('.dropdown')) {
+              document.querySelectorAll('.dropdown').forEach(dropdown => {
+                  dropdown.classList.remove('is-active');
+              });
+          }
+      });
+    </script>
+
+
+  <section class="section">
+    <div class="container">
+      <div class="box">
+        <p class="title is-3">4. Menu</p>
+
+        <div class="columns">
+          <div class="column is-half">
+            <aside class="menu has-background-white box is-shadowless" style="border: 3px solid hsl(217, 71%, 53%); margin:20px; margin-left: 50px;">
+              <p class="menu-label">General</p>
+              <ul class="menu-list">
+                <li><a>Dashboard</a></li>
+                <li><a>Customers</a></li>
+              </ul>
+              <p class="menu-label">Administration</p>
+              <ul class="menu-list">
+                <li><a>Team Settings</a></li>
+                <li>
+                  <a>Manage Your Team</a>
+                  <ul>
+                    <li><a>Members</a></li>
+                    <li><a class="is-active">Plugins</a></li>
+                    <li><a>Add a member</a></li>
+                  </ul>
+                </li>
+                <li><a>Invitations</a></li>
+                <li><a>Cloud Storage Environment Settings</a></li>
+                <li><a>Authentication</a></li>
+              </ul>
+              <p class="menu-label">Transactions</p>
+              <ul class="menu-list">
+                <li><a>Payments</a></li>
+                <li><a>Transfers</a></li>
+                <li><a>Balance</a></li>
+              </ul>
+            </aside>
+          </div>
+
+        <div class="column is-half">
+          <pre style="max-width: 800px; margin: 0 auto; background: #f5f5f5; padding: 50px; border-radius: 20px;"><code>&lt;aside class="menu has-background-white box is-shadowless"&gt;
+  &lt;p class="menu-label"&gt;General&lt;/p&gt;
+  &lt;ul class="menu-list"&gt;
+    &lt;li&gt;&lt;a&gt;Dashboard&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a&gt;Customers&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;p class="menu-label"&gt;Administration&lt;/p&gt;
+  &lt;ul class="menu-list"&gt;
+    &lt;li&gt;&lt;a&gt;Team Settings&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;
+      &lt;a&gt;Manage Your Team&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a&gt;Members&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class="is-active"&gt;Plugins&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a&gt;Add a member&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a&gt;Invitations&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a&gt;Cloud Storage Environment Settings&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a&gt;Authentication&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;p class="menu-label"&gt;Transactions&lt;/p&gt;
+  &lt;ul class="menu-list"&gt;
+    &lt;li&gt;&lt;a&gt;Payments&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a&gt;Transfers&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a&gt;Balance&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/aside&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container">
+      <div class="box">
+        <p class="title is-3">5. Message</p>
+        <div class="columns">
+          <div class="column is-two-fifths">
+            <article class="message" style="margin: 20px; margin-left: 50px;">
+              <div class="message-header">
+                <p>Hello World</p>
+                <!--<button class="delete" aria-label="delete"></button>-->
+              </div>
+              <div class="message-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec
+                nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus
+                diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac
+                <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
+                sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a
+                neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+              </div>
+            </article>
+          </div>
+
+    <div class="column is-three-fifths">
+      <pre style="max-width: 800px; margin: 0 auto; background: #f5f5f5; padding: 50px; border-radius: 20px;"><code>&lt;article class="message" style="margin: 20px;"&gt;
+        &lt;div class="message-header"&gt;
+          &lt;p&gt;Hello World&lt;/p&gt;
+          &lt;!--&lt;button class="delete" aria-label="delete"&gt;&lt;/button&gt;--&gt;
+        &lt;/div&gt;
+        &lt;div class="message-body"&gt;
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          &lt;strong&gt;Pellentesque risus mi&lt;/strong&gt;, tempus quis placerat ut, porta nec
+          nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus
+          diam, et dictum &lt;a&gt;felis venenatis&lt;/a&gt; efficitur. Aenean ac
+          &lt;em&gt;eleifend lacus&lt;/em&gt;, in mollis lectus. Donec sodales, arcu et
+          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a
+          neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+        &lt;/div&gt;
+      &lt;/article&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container">
+      <div class="box">
+        <p class="title is-3">6. Modal (JavaScript)</p>
+
+          <div class="modal" id="modal-js-example">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+              <header class="modal-card-head">
+                <p class="modal-card-title">TÍTULO</p>
+                <button class="delete" aria-label="close"></button>
+              </header>
+              <section class="modal-card-body">
+                Contenido...
+              </section>
+              <footer class="modal-card-foot">
+                <div class="buttons">
+                  <button class="button is-success">Save changes</button>
+                  <button class="button">Cancel</button>
+                </div>
+              </footer>
+            </div>
+          </div>
+
+          <div class="columns">
+            <div class="column is-two-fifhts">
+              <button class="js-modal-trigger button is-primary" data-target="modal-js-example" style="margin:100px;">
+                Open JS example modal
+              </button>
+              </br>
+              <a href="https://bulma.io/documentation/components/modal/#javascript-implementation-example">
+              <button class="js-modal-trigger button is-link" style="margin:100px;">
+                Código JavaScript Bulma
+              </button>
+              </a>
+            </div>
+
+            <div class="column is-three-fifhts">
+          <pre style="max-width: 800px; margin: 0 auto; background: #f5f5f5; padding: 50px; border-radius: 20px;"><code>&lt;div class="modal" id="modal-js-example"&gt;
+  &lt;div class="modal-background"&gt;&lt;/div&gt;
+  &lt;div class="modal-card"&gt;
+    &lt;header class="modal-card-head"&gt;
+      &lt;p class="modal-card-title"&gt;Título&lt;/p&gt;
+      &lt;button class="delete" aria-label="close"&gt;&lt;/button&gt;
+    &lt;/header&gt;
+    &lt;section class="modal-card-body"&gt;
+      Contenido...
+    &lt;/section&gt;
+    &lt;footer class="modal-card-foot"&gt;
+      &lt;div class="buttons"&gt;
+        &lt;button class="button is-success"&gt;Save changes&lt;/button&gt;
+        &lt;button class="button"&gt;Cancel&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/footer&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;button class="js-modal-trigger button is-primary" data-target="modal-js-example"&gt;
+  Open JS example modal
+&lt;/button&gt;</code></pre>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        function openModal($el) {
+          $el.classList.add('is-active');
+        }
+        function closeModal($el) {
+          $el.classList.remove('is-active');
+        }
+        function closeAllModals() {
+          (document.querySelectorAll('.modal') || []).forEach(($modal) => {
+            closeModal($modal);
+          });
+        }
+        (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
+          const modal = $trigger.dataset.target;
+          const $target = document.getElementById(modal);
+
+          $trigger.addEventListener('click', () => {
+            openModal($target);
+          });
+        });
+        (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
+          const $target = $close.closest('.modal');
+
+          $close.addEventListener('click', () => {
+            closeModal($target);
+          });
+        });
+        document.addEventListener('keydown', (event) => {
+          if(event.key === "Escape") {
+            closeAllModals();
+          }
+        });
+      });
+    </script>
+
+
+<section class="section">
+  <div class="container">
+    <div class="box">
+      <p class="title is-3">7. Navbar</p>
+
+      <nav class="navbar is-link">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://bulma.io">
+            <svg width="640" height="160" viewBox="0 0 640 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969
+              242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747
+              116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170
+              132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085
+              83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371
+              43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781
+              20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397
+              316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806
+              25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283
+              115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63
+              22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301
+              422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703
+              132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729
+              24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969
+              523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887
+              139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264
+              100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987
+              138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956
+              575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556
+              629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001
+              113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377
+              96.8775H598.479L584.428 47.2948L570.377 96.8775Z" fill="black" class="bd-svg-black" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z" fill="#00D1B2"/>
+            </svg>
+          </a>
+          <a class="navbar-item" href="#">Home</a>
+          <a class="navbar-item" href="#">Documentation</a>
+          <a class="navbar-item" href="#">More</a>
+          <a class="navbar-item" href="#">About</a>
+        </div>
+      </nav>
+        </br>
+        <pre style="max-width: 800px; margin: 0 auto; background: #f5f5f5; padding: 50px; border-radius: 20px;"><code>&lt;nav class="navbar is-link"&gt;
+  &lt;div class="navbar-brand"&gt;
+    &lt;a class="navbar-item" href="https://bulma.io"&gt;
+      &lt;img src="..."&gt;
+    &lt;/a&gt;
+    &lt;a class="navbar-item" href="#"&gt;Home&lt;/a&gt;
+    &lt;a class="navbar-item" href="#"&gt;Documentation&lt;/a&gt;
+    &lt;a class="navbar-item" href="#"&gt;More&lt;/a&gt;
+    &lt;a class="navbar-item" href="#"&gt;About&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container">
+      <div class="box">
+        <p class="title is-3">8. Pagination</p>
+
+        <nav class="pagination" role="navigation" aria-label="pagination" style="margin: 20px;">
+          <a href="#" class="pagination-previous">Previous</a>
+          <a href="#" class="pagination-next">Next page</a>
+          <ul class="pagination-list">
+            <li>
+              <a href="#" class="pagination-link" aria-label="Goto page 1">1</a>
+            </li>
+            <li>
+              <span class="pagination-ellipsis">&hellip;</span>
+            </li>
+            <li>
+              <a href="#" class="pagination-link" aria-label="Goto page 45">45</a>
+            </li>
+            <li>
+              <a class="pagination-link is-current" aria-label="Page 46" aria-current="page" >46</a>
+            </li>
+            <li>
+              <a href="#" class="pagination-link" aria-label="Goto page 47">47</a>
+            </li>
+            <li>
+              <span class="pagination-ellipsis">&hellip;</span>
+            </li>
+            <li>
+              <a href="#" class="pagination-link" aria-label="Goto page 86">86</a>
+            </li>
+          </ul>
+        </nav>
+
+        <pre style="max-width: 800px; margin: 0 auto; background: #f5f5f5; padding: 50px; border-radius: 20px;"><code>&lt;nav class="pagination" role="navigation" aria-label="pagination"&gt;
+  &lt;a href="#" class="pagination-previous"&gt;Previous&lt;/a&gt;
+  &lt;a href="#" class="pagination-next"&gt;Next page&lt;/a&gt;
+  &lt;ul class="pagination-list"&gt;
+    &lt;li&gt;
+      &lt;a href="#" class="pagination-link" aria-label="Goto page 1"&gt;1&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;span class="pagination-ellipsis"&gt;&amp;hellip;&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="#" class="pagination-link" aria-label="Goto page 45"&gt;45&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a class="pagination-link is-current" aria-label="Page 46" aria-current="page"&gt;46&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="#" class="pagination-link" aria-label="Goto page 47"&gt;47&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;span class="pagination-ellipsis"&gt;&amp;hellip;&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="#" class="pagination-link" aria-label="Goto page 86"&gt;86&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container">
+      <div class="box">
+        <p class="title is-3">9. Panel</p>
+
+        <article class="panel is-primary" style="margin: 20px; background-color: white;">
+          <p class="panel-heading">Primary</p>
+          <p class="panel-tabs">
+            <a class="is-active">All</a>
+            <a>Public</a>
+            <a>Private</a>
+            <a>Sources</a>
+            <a>Forks</a>
+          </p>
+          <div class="panel-block">
+            <p class="control has-icons-left">
+              <input class="input is-primary" type="text" placeholder="Search" />
+              <span class="icon is-left">
+                <i class="fas fa-search" aria-hidden="true"></i>
+              </span>
+            </p>
+          </div>
+          <a class="panel-block is-active">
+            <span class="panel-icon">
+              <i class="fas fa-book" aria-hidden="true"></i>
+            </span>
+            bulma
+          </a>
+          <a class="panel-block">
+            <span class="panel-icon">
+              <i class="fas fa-book" aria-hidden="true"></i>
+            </span>
+            marksheet
+          </a>
+          <a class="panel-block">
+            <span class="panel-icon">
+              <i class="fas fa-book" aria-hidden="true"></i>
+            </span>
+            minireset.css
+          </a>
+          <a class="panel-block">
+            <span class="panel-icon">
+              <i class="fas fa-book" aria-hidden="true"></i>
+            </span>
+            jgthms.github.io
+          </a>
+        </article>
+
+        <pre style="max-width: 800px; margin: 0 auto; background: #f5f5f5; padding: 50px; border-radius: 20px;"><code>&lt;article class="panel is-primary"&gt;
+  &lt;p class="panel-heading"&gt;Primary&lt;/p&gt;
+  &lt;p class="panel-tabs"&gt;
+    &lt;a class="is-active"&gt;All&lt;/a&gt;
+    &lt;a&gt;Public&lt;/a&gt;
+    &lt;a&gt;Private&lt;/a&gt;
+    &lt;a&gt;Sources&lt;/a&gt;
+    &lt;a&gt;Forks&lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class="panel-block"&gt;
+    &lt;p class="control has-icons-left"&gt;
+      &lt;input class="input is-primary" type="text" placeholder="Search"&gt;
+      &lt;span class="icon is-left"&gt;
+        &lt;i class="fas fa-search" aria-hidden="true"&gt;&lt;/i&gt;
+      &lt;/span&gt;
+    &lt;/p&gt;
+  &lt;/div&gt;
+  &lt;a class="panel-block is-active"&gt;
+    &lt;span class="panel-icon"&gt;
+      &lt;i class="fas fa-book" aria-hidden="true"&gt;&lt;/i&gt;
+    &lt;/span&gt;
+    bulma
+  &lt;/a&gt;
+  &lt;a class="panel-block"&gt;
+    &lt;span class="panel-icon"&gt;
+      &lt;i class="fas fa-book" aria-hidden="true"&gt;&lt;/i&gt;
+    &lt;/span&gt;
+    marksheet 
+  &lt;/a&gt;
+&lt;/article&gt;</code></pre>
+      </div>
+    </div>
+  </section>
+
+<section class="section">
+  <div class="container">
+    <div class="box">
+      <p class="title is-3">10. Tabs</p>
+
+      <div class="columns">
+        <div class="column is-three-fifths">
+          <div class="tabs" style="margin-bottom: 50px;">
+            <ul>
+              <li class="is-active"><a>Pictures</a></li>
+              <li><a>Music</a></li>
+              <li><a>Videos</a></li>
+              <li><a>Documents</a></li>
+            </ul>
+          </div>
+
+          <div class="tabs is-centered is-boxed" style="margin-bottom: 50px;">
+            <ul>
+              <li class="is-active">
+                <a>
+                  <span class="icon is-small"><i class="fas fa-image" aria-hidden="true"></i></span>
+                  <span>Pictures</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="icon is-small"><i class="fas fa-music" aria-hidden="true"></i></span>
+                  <span>Music</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
+                  <span>Videos</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="icon is-small"><i class="far fa-file-alt" aria-hidden="true"></i></span>
+                  <span>Documents</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="column is-two-fifths">
+      <pre style="max-width: 800px; margin: 0 auto; background: #f5f5f5; padding: 50px; border-radius: 20px;"><code>&lt;div class="tabs"&gt;
+  &lt;ul&gt;
+    &lt;li class="is-active"&gt;&lt;a&gt;Pictures&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a&gt;Music&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a&gt;Videos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a&gt;Documents&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+    <p class="title is-1 has-text-centered">ADICIONES BULMA*</p>
+
+    <section class="section">
+      <div class="container">
+        <div class="box">
+
+          <p class="title is-3">1. Dark Mode</p>
+
+          <div class="columns">
+            <div class="column is-two-fifths">
+              <div class="box">
+                Modo día <code>por defecto</code>.
+              </div>
+        
+              <div class="box" data-theme="dark">Modo noche (usando data-theme)</div>
+        
+              <div class="box theme-dark">Modo noche (usando class)</div>
+            </div>
+            
+            <div class="column is-three-fifths">
+              <pre style="max-width: 800px; margin: 0 auto; background: #f5f5f5; padding: 50px; border-radius: 20px;"><code>&lt;div class="box"&gt;
+  Modo día &lt;code&gt;por defecto&lt;/code&gt;.
+&lt;/div&gt;
+
+&lt;div class="box" data-theme="dark"&gt;Modo noche (usando data-theme)&lt;/div&gt;
+
+&lt;div class="box theme-dark"&gt;Modo noche (usando class)&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section">
+      <div class="container">
+        <div class="box">
+
+          <p class="title is-3">2. Color Palette</p>
+
+          <div class="columns">
+            <div class="column is-one-fifths">
+              <table class="table is-bordered" style="margin-left: 250px;">
+                <tbody>
+                  <tr>
+                    <td><code>text</code></td>
+                    <td><span class="has-background-text" style="width: 24px; height: 24px; display: inline-block;"></span></td>
+                  </tr>
+                  <tr>
+                    <td><code>link</code></td>
+                    <td><span class="has-background-link" style="width: 24px; height: 24px; display: inline-block;"></span></td>
+                  </tr>
+                  <tr>
+                    <td><code>primary</code></td>
+                    <td><span class="has-background-primary" style="width: 24px; height: 24px; display: inline-block;"></span></td>
+                  </tr>
+                  <tr>
+                    <td><code>info</code></td>
+                    <td><span class="has-background-info" style="width: 24px; height: 24px; display: inline-block;"></span></td>
+                  </tr>
+                  <tr>
+                    <td><code>success</code></td>
+                    <td><span class="has-background-success" style="width: 24px; height: 24px; display: inline-block;"></span></td>
+                  </tr>
+                  <tr>
+                    <td><code>warning</code></td>
+                    <td><span class="has-background-warning" style="width: 24px; height: 24px; display: inline-block;"></span></td>
+                  </tr>
+                  <tr>
+                    <td><code>danger</code></td>
+                    <td><span class="has-background-danger" style="width: 24px; height: 24px; display: inline-block;"></span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          <div class="column is-four-fifths">
+            <pre style="max-width: 500px; margin: 0 auto; margin-top: 50px; background: #f5f5f5; padding: 20px; border-radius: 10px; font-size: 0.9em;"><code>&lt;span class="has-text-primary"&gt;Primary&lt;/span&gt;
+&lt;span class="has-text-link"&gt;Link&lt;/span&gt;
+&lt;span class="has-text-info"&gt;Info&lt;/span&gt;
+&lt;span class="has-text-success"&gt;Success&lt;/span&gt;
+&lt;span class="has-text-warning"&gt;Warning&lt;/span&gt;
+&lt;span class="has-text-danger"&gt;Danger&lt;/span&gt;
+          </code></pre>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="box">
+
+        <p class="title is-3">3. Skeleton</p>
+        
+        <div class="skeleton-toggler button is-primary is-medium mb-6">
+          <button id="js-toggle-skeleton">
+            Activar/Desactivar Skeleton
+            <span id="skeleton-status">(Inactive)</span>
+          </button>
+        </div>
+
+        <div class="buttons" id="skeleton-buttons">
+          <button class="button is-skeleton">Button</button>
+          <button class="button is-link is-skeleton">Link</button>
+          <button class="button is-primary is-skeleton">Primary</button>
+          <button class="button is-success is-skeleton">Success</button>
+          <button class="button is-info is-skeleton">Info</button>
+          <button class="button is-warning is-skeleton">Warning</button>
+          <button class="button is-danger is-skeleton">Danger</button>
+        </div>
+        <div class="skeleton-block is-skeleton">
+          Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+          ut fermentum massa justo sit amet risus. Donec sed odio dui.
+          Nullam quis risus eget urna mollis ornare vel eu leo.
+          Cum sociis natoque penatibus et magnis dis parturient montes,
+          nascetur ridiculus mus. Nullam id dolor id
+          nibh ultricies vehicula ut id elit.
+        </div>
+
+        <div class="columns">
+          <div class="column is-four-ninths">
+            <pre style="max-width: 600px; margin: 0 auto; background: #f5f5f5; padding: 50px; border-radius: 20px;"><code>&lt;div class="skeleton-toggler button is-primary is-medium mb-6"&gt;
+  &lt;button id="js-toggle-skeleton"&gt;
+    Activar/Desactivar Skeleton
+    &lt;span id="skeleton-status"&gt;(Inactive)&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class="buttons" id="skeleton-buttons"&gt;
+  &lt;button class="button is-skeleton"&gt;Button&lt;/button&gt;
+  &lt;button class="button is-link is-skeleton"&gt;Link&lt;/button&gt;
+  &lt;button class="button is-primary is-skeleton"&gt;Primary&lt;/button&gt;
+  &lt;button class="button is-success is-skeleton"&gt;Success&lt;/button&gt;
+  &lt;button class="button is-info is-skeleton"&gt;Info&lt;/button&gt;
+  &lt;button class="button is-warning is-skeleton"&gt;Warning&lt;/button&gt;
+  &lt;button class="button is-danger is-skeleton"&gt;Danger&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+
+          </div>
+
+          <div class="column is-five-ninths">
+            <pre style="max-width: 800px; margin-top: 10px; background: #282c34; padding: 50px; border-radius: 20px; color: #abb2bf;"><code>&lt;script&gt;
+  document.getElementById('js-toggle-skeleton').addEventListener('click', function() {
+    const buttons = document.getElementById('skeleton-buttons');
+    const status = document.getElementById('skeleton-status');
+    
+    buttons.classList.toggle('is-skeleton-active');
+    
+    if(buttons.classList.contains('is-skeleton-active')) {
+      status.textContent = '(Active)';
+    } else {
+      status.textContent = '(Inactive)';
+    }
+  });
+&lt;/script&gt;</code></pre>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', () => {
+        const hasSkeletons = document.querySelectorAll('.has-skeleton');
+        const isSkeletons = document.querySelectorAll('.is-skeleton');
+        const toggleButton = document.getElementById('js-toggle-skeleton');
+        const statusLabel = document.getElementById('skeleton-status');
+      
+        let skeletonsActive = false;
+      
+        function toggleSkeletons() {
+          hasSkeletons.forEach((el) => {
+            el.classList.toggle("has-skeleton");
+          });
+        
+          isSkeletons.forEach((el) => {
+            el.classList.toggle("is-skeleton");
+          });
+        }
+      
+        toggleButton.addEventListener("click", () => {
+          skeletonsActive = !skeletonsActive;
+        
+          statusLabel.textContent = skeletonsActive ? "(Active)" : "(Inactive)";
+          toggleSkeletons();
+        });
+      });
+    </script>
+
+</html>
